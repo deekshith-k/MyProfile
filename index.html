@@ -105,7 +105,7 @@
       <div id="smooth-content">
         <div class="left-sidebar">
           <div class="sidebar-header d-flex align-items-center justify-content-between">
-            <img src="assets/images/logo.png" alt="Logo">
+            <img src="assets/images/logo.png" alt="Logo" style="width: 100%;">
             <span class="designation">Web Designer</span>
           </div>
           <img class="me" src="assets/images/me.jpg" alt="Me">
@@ -396,7 +396,7 @@
               <h3 class="scroll-animation" data-animation="fade_from_bottom"><a
                   href="mailto:kumardk8583@gmail.com">kumardk8583@gmail.com</a></h3>
               <p id="required-msg">* Marked fields are required to fill.</p>
-              <form class="contact-form scroll-animation" data-animation="fade_from_bottom" method="POST"
+              <!-- <form class="contact-form scroll-animation" data-animation="fade_from_bottom" method="POST"
                 action="mail.php">
                 <div class="alert alert-success messenger-box-contact__msg" style="display: none" role="alert">
                   Your message was sent successfully.
@@ -452,6 +452,38 @@
                     </div>
                   </div>
                 </div>
+              </form> -->
+           
+              <form id="fs-frm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xrgnygqe" method="post">
+                <fieldset id="fs-frm-inputs" >
+                  <div class="row">
+                  <div class="col-md-6">
+                  <label for="full-name">Full Name  <sup>*</sup></label>
+                  <input type="text" name="name" id="full-name" placeholder="Your Full Name" required="">
+                  </div>
+                  <div class="col-md-6">
+                  <label for="email-address">Email Address  <sup>*</sup></label>
+                  <input type="email" name="_replyto" id="email-address" placeholder="Your email adress" required="">
+                  </div>
+                  <div class="col-md-6">
+                  <label for="subject">Subject  <sup>*</sup></label>
+                  <select name="subject" id="subject" required="">
+                    <option value="" selected="" disabled="">Select a Subject</option>
+                    <option value="Freelance Work">Freelance Work</option>
+                    <option value="Job Vacancy">Job Vacancy</option>
+                  </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phone">Phone Number  <sup>*</sup></label>
+                    <input type="tel" name="phone" id="phone" placeholder="Your phone number" required="">
+                  </div>
+                  <div class="col-md-12">
+                  <label for="message">Message  <sup>*</sup></label>
+                  <textarea name="message" id="message" placeholder="Wrire your message here ..." required></textarea>
+                  </div>
+                  </div>
+                </fieldset>
+                <input class="theme-btn" type="submit" value="Send Message">
               </form>
             </div>
           </div>
@@ -475,5 +507,117 @@
     integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
     data-cf-beacon='{"rayId":"7a18fe9f1b43f35b","version":"2023.2.0","r":1,"token":"52ad871770524b3e8ca1e53094efe67a","si":100}'
     crossorigin="anonymous"></script>
+    <style>/* reset */
+      #fs-frm input,
+      #fs-frm select,
+      #fs-frm textarea,
+      #fs-frm fieldset,
+      #fs-frm optgroup,
+      #fs-frm label,
+      #fs-frm #card-element:disabled {
+        font-size: 100%;
+        color: inherit;
+        border: none;
+        border-radius: 0;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+      #fs-frm label,
+      #fs-frm legend,
+      #fs-frm ::placeholder {
+        font-size: .825rem;
+        margin-bottom: .5rem;
+        padding-top: .2rem;
+        display: flex;
+        align-items: baseline;
+      }
+      
+      /* border, padding, margin, width */
+      #fs-frm input,
+      #fs-frm select,
+      #fs-frm textarea,
+      #fs-frm #card-element {
+        border: 1px solid rgba(0,0,0,0.2);
+        background-color: transparent;
+        padding: .75em 1rem;
+        margin-bottom: 1.5rem;
+      }
+      #fs-frm input:focus,
+      #fs-frm select:focus,
+      #fs-frm textarea:focus {
+        background-color: transparent;
+        outline-style: solid;
+        outline-width: thin;
+        outline-color: gray;
+        outline-offset: -1px;
+      }
+      #fs-frm [type="text"],
+      #fs-frm [type="email"] {
+        width: 100%;
+      }
+      #fs-frm [type="button"],
+      #fs-frm [type="submit"],
+      #fs-frm [type="reset"] {
+        width: auto;
+        cursor: pointer;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+      }
+      #fs-frm [type="button"]:focus,
+      #fs-frm [type="submit"]:focus,
+      #fs-frm [type="reset"]:focus {
+        outline: none;
+      }
+      #fs-frm [type="submit"],
+      #fs-frm [type="reset"] {
+        margin-bottom: 0;
+      }
+      #fs-frm select {
+        text-transform: none;
+      }
+      
+      #fs-frm [type="checkbox"] {
+        -webkit-appearance: checkbox;
+        -moz-appearance: checkbox;
+        appearance: checkbox;
+        display: inline-block;
+        width: auto;
+        margin: 0 .5em 0 0 !important;
+      }
+      
+      #fs-frm [type="radio"] {
+        -webkit-appearance: radio;
+        -moz-appearance: radio;
+        appearance: radio;
+      }
+      
+      /* address, locale */
+      #fs-frm fieldset.locale input[name="city"],
+      #fs-frm fieldset.locale select[name="state"],
+      #fs-frm fieldset.locale input[name="postal-code"] {
+        display: inline;
+      }
+      #fs-frm fieldset.locale input[name="city"] {
+        width: 52%;
+      }
+      #fs-frm fieldset.locale select[name="state"],
+      #fs-frm fieldset.locale input[name="postal-code"] {
+        width: 20%;
+      }
+      #fs-frm fieldset.locale input[name="city"],
+      #fs-frm fieldset.locale select[name="state"] {
+        margin-right: 3%;
+      }
+
+      #fs-frm-inputs sup{
+        color: red;
+      }
+      </style>
+
 </body>
 </html>
