@@ -31,13 +31,17 @@
   .left-sidebar .sidebar-header .designation {
     line-height:1.4
   }
+  .content-width{
+    margin-left:30px;
+    max-width:100%
+  }
 }
 @media(max-width:1220px) {
   .custom-container {
     max-width:767px
   }
   .content-width {
-    max-width:100%
+    max-width:100%;
   }
   .section-header h1 br {
     display:none
