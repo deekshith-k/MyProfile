@@ -110,6 +110,9 @@
   .blog-three-columns-main .blog-content-area .row>.col-md-4 {
     width:50%
   }
+    .content-width{
+    margin-left:30px;
+  }
 }
 @media(max-width:787px) {
   .hero-section .hero-content h1 {
@@ -118,6 +121,9 @@
   }
   .hero-section .hero-content .facts h1 {
     font-size:52px
+  }
+    .content-width{
+    margin-left:30px;
   }
 }
 @media(max-width:767px) {
@@ -259,6 +265,9 @@
   .footer-area .footer-widget-item {
     margin-bottom:40px
   }
+    .content-width{
+    margin-left:30px;
+  }
 }
 @media(max-width:584px) {
   .subtitle {
@@ -320,6 +329,9 @@
   .comments-area .comments .children {
     padding-left:40px
   }
+    .content-width{
+    margin-left:0px;
+  }
 }
 @media(max-width:425px) {
   .comments-area .comments .comments-list .comment-item .comment-body .comment-content h4 {
@@ -330,5 +342,8 @@
   .comments-area .comments .comments-list .comment-item .comment-body .comment-content h4 .date {
     margin-left:26px;
     margin-top:10px
+  }
+    .content-width{
+    margin-left:0px;
   }
 }
