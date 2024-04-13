@@ -33,7 +33,6 @@
   }
   .content-width{
     margin-left:30px;
-    max-width:100%
   }
 }
 @media(max-width:1220px) {
